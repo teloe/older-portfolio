@@ -6,6 +6,28 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
+/*----------------------------------------
+  Navbar
+  ----------------------------------------*/
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: #1C2331;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 .bg {
   /*background-image: url(../img/hero.jpg);*/
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
@@ -22,7 +44,32 @@ body, html {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 4rem;
   font-weight: bold;
 }
 
+h2 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+#learn-more {
+  margin-top: 30px;
+}
+
+.section-header {
+  padding-top: 30px;
+}
+
+
+/*----------------------------------------
+  Media Queries
+  ----------------------------------------*/
+
+@media(min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
