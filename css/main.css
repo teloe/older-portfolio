@@ -1,0 +1,28 @@
+body, html {
+  height: 100%;
+  /*font-family: 'Lato', sans-serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg {
+  /*background-image: url(../img/hero.jpg);*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+  height: 100%; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+}
+
