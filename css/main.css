@@ -14,12 +14,12 @@ body, html {
 }
 
 .top-nav-collapse {
-  background-color: #1C2331;
+  background-color: #263238;
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #1C2331;
+    background-color: #263238;
   }
 }
 
@@ -28,8 +28,10 @@ body, html {
   padding-left: 1rem;
 }
 
+/*----------------------------------------
+  Hero Section
+  ----------------------------------------*/
 .bg {
-  /*background-image: url(../img/hero.jpg);*/
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
   height: 100%; 
   background-position: center; 
@@ -44,15 +46,12 @@ body, html {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
-h2 {
-  font-size: 3rem;
-}
 h4 {
-  font-size: 1.2rem;
+  font-size: 24px;
 }
 
 #learn-more {
@@ -63,6 +62,18 @@ h4 {
   padding-top: 30px;
 }
 
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+i.fab {
+  font-size: 30px;
+  /*padding: 10px;*/
+}
+
+.github-icon {
+  background: #4484C2;
+}
 
 /*----------------------------------------
   Media Queries
@@ -70,6 +81,9 @@ h4 {
 
 @media(min-width: 768px) {
   h1 {
-    font-size: 80px;
+    font-size: 6rem;
+  }
+  h4 {
+    font-size: 1.2rem;
   }
 }
