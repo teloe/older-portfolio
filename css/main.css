@@ -65,15 +65,34 @@ h4 {
 .social-icons {
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
 }
 i.fab {
   font-size: 30px;
   /*padding: 10px;*/
 }
 
-.github-icon {
-  background: #4484C2;
+.hero-social-btn {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
+
+
+/*----------------------------------------
+  About
+  ----------------------------------------*/
+
+
+/*----------------------------------------
+  Experience
+  ----------------------------------------*/
+
+
+/*----------------------------------------
+  Projects
+  ----------------------------------------*/
+
+
 
 /*----------------------------------------
   Media Queries
