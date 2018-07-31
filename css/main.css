@@ -50,8 +50,17 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 h4 {
   font-size: 24px;
+}
+
+p {
+  font-size: 1.3rem;
 }
 
 #learn-more {
@@ -59,7 +68,7 @@ h4 {
 }
 
 .section-header {
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .social-icons {
@@ -91,7 +100,41 @@ i.fab {
 /*----------------------------------------
   Projects
   ----------------------------------------*/
+/*.project-row {
+  flex-direction: column;
+}
 
+.card {
+  padding: 0;
+  margin: 15px;
+}*/
+
+
+/*----------------------------------------
+  Contact
+  ----------------------------------------*/
+.contact-section .contact {
+    -webkit-border-radius: 0 .25rem .25rem 0;
+    border-radius: 0 .25rem .25rem 0;
+    background-color: #3F729B;
+  }
+  .contact-section .form .btn-floating {
+    float: right;
+    position: relative;
+    bottom: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    transition: all .2s ease-in-out;
+    margin: 10px;
+
+}
+
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    color: #fff;
+}
 
 
 /*----------------------------------------
@@ -105,4 +148,15 @@ i.fab {
   h4 {
     font-size: 1.2rem;
   }
+  .project-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+/*  .card {
+    width: 30%;
+  }*/
+
+
+
 }
