@@ -62,6 +62,18 @@
   <!-- About -->
   <div id="about" class="container">
     <h2 class="section-header text-center">About</h2>
+
+    <div class="col-md-6 photo">
+      <div class="view overlay z-depth-3">
+      <img src="img/profilepic.jpg" class="img-fluid" alt="Me and my wife, Natalie.">
+      <div class="mask flex-center rgba-stylish-light">
+          <p class="white-text">Me and my wife, Natalie ❤️</p>
+      </div>
+    </div>
+    </div>
+    
+    
+    
     <p>My name is Tom Eloe and I’m a software developer with a background in insurance.</p>
 
     <p>For the last six years I worked at Allstate Insurance where I managed two branch locations at one of the largest Allstate agencies in CA. During my time there I discovered I have a passion for coding while I taught myself the basics (HTML, CSS, JavaScript) after work or during lunch.</p>
@@ -71,6 +83,7 @@
     <p>My goal now is to secure a job in an environment where I can hone my skills and build a career as a software developer.</p>
   </div>
 
+  <hr class="container">
 
   <div id="experience" class="container">
     <h2 class="section-header text-center">Experience</h2>
@@ -110,13 +123,13 @@
 
     <div class="row project-row">
       <!--Card-->
-    <div class="card">
+    <div class="card col-lg-4">
         <!--Card image-->
         <div class="view hm-white-slight waves-light" mdbWavesEffect>
-            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
-            <a>
-                <div class="mask"></div>
-            </a>
+          <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+          <a>
+              <div class="mask"></div>
+          </a>
         </div>
         <!--Card content-->
         <div class="card-body">
@@ -128,29 +141,28 @@
         </div>
     </div>
 
-
     <!--Card-->
-    <div class="card">
-        <!--Card image-->
-        <div class="view hm-white-slight waves-light" mdbWavesEffect>
-            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
-            <a>
-                <div class="mask"></div>
-            </a>
-        </div>
-        <!--Card content-->
-        <div class="card-body">
-            <!--Title-->
-            <h4 class="card-title">Project Name</h4>
-            <!--Text-->
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a class="btn btn-primary waves-light" mdbWavesEffect>View Project</a>
-        </div>
+    <div class="card col-lg-4">
+      <!--Card image-->
+      <div class="view hm-white-slight waves-light" mdbWavesEffect>
+        <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+        <a>
+            <div class="mask"></div>
+        </a>
+      </div>
+      <!--Card content-->
+      <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Project Name</h4>
+        <!--Text-->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class="btn btn-primary waves-light" mdbWavesEffect>View Project</a>
+      </div>
     </div>
     
 
     <!--Card-->
-    <div class="card">
+    <div class="card col-lg-4">
         <!--Card image-->
         <div class="view hm-white-slight waves-light" mdbWavesEffect>
             <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
@@ -233,7 +245,7 @@
                   <div class="md-form mb-0">
                     <textarea type="text" id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
                     <label for="form-contact-message">Your message</label>
-                    <a class="btn-floating btn-lg unique-color">
+                    <a class="btn-floating btn-lg stylish-color-dark">
                       <i class="fas fa-paper-plane"></i>
                     </a>
                   </div>
@@ -250,9 +262,7 @@
 
           <!-- Grid column -->
           <div class="col-lg-4">
-
             <div class="card-body contact text-center h-100 white-text">
-
               <h3 class="my-4 pb-2">Contact information</h3>
               <ul class="text-lg-left list-unstyled ml-4">
                 <li>
@@ -275,32 +285,11 @@
                   </a>
                 </li>
               </ul>
-
             </div>
-
           </div>
-          <!-- Grid column -->
-
         </div>
-        <!-- Grid row -->
-
       </div>
-      <!-- Form with header -->
-
     </section>
-    <!-- Section: Contact v.3 -->
-
-
-
-
-
-
-
-
-
-
-
-
 
   </div>
 
@@ -311,17 +300,12 @@
       <!--Footer Links-->
       <div class="container-fluid">
         <div class="row">
-
-          <!--First column-->
           <div class="col-md-12">
-              <h5 class="title">Footer Content</h5>
-              <p>Blah Blah Blah</p>
+            <h5 class="title">Footer Content</h5>
+            <p>Blah Blah Blah</p>
           </div>
-
-            
         </div>
       </div>
-
 
       <!--Copyright-->
       <div class="footer-copyright text-center py-3">
@@ -345,5 +329,10 @@
   <!-- JQuery Easing -->
   <script type="text/javascript" src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <!-- Scroll animation effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
