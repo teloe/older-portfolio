@@ -7,11 +7,12 @@ body, html {
 }
 
 .section-header {
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 0;
 }
 
-hr {
-  margin: 0 auto;
+hr.my-4 {
+  max-width: 50px;
+  border-width: 3px;
 }
 
 /*----------------------------------------
@@ -60,7 +61,6 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  font-weight: bold;
 }
 
 h4 {
@@ -147,15 +147,6 @@ div.photo {
   h1 {
     font-size: 6rem;
   }
-
-  h4 {
-    font-size: 1.2rem;
-  }
-
-  /*h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-  }*/
 
   h2 {
     font-size: 4rem;
