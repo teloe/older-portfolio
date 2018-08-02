@@ -36,17 +36,14 @@ hr.my-4 {
 /*----------------------------------------
   Navbar
   ----------------------------------------*/
-.navbar {
-  background-color: transparent;
-}
 
 .top-nav-collapse {
-  background-color: #263238;
+  background-color: #1C2331;
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #263238;
+    background-color: #1C2331;
   }
 }
 
@@ -59,7 +56,7 @@ hr.my-4 {
   Hero Section
   ----------------------------------------*/
 .bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/bg2.jpeg);
   height: 100%; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -130,6 +127,15 @@ div.overlay {
 
 .lang-icon {
   width: 40px;
+}
+
+button#elegant {
+  width: 12rem;
+}
+
+i.view-icon {
+  font-size: 1rem;
+  padding-left: 0.2rem;
 }
 
 
