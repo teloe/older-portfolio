@@ -6,6 +6,20 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
 .section-header {
   padding: 2.5rem 0 0;
 }
@@ -58,19 +72,6 @@ hr.my-4 {
   color: #fff;
 }
 
-h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h4 {
-  font-size: 1.3rem;
-}
-
 #learn-more {
   margin-top: 30px;
 }
@@ -95,7 +96,7 @@ i.fab {
   About
   ----------------------------------------*/
 div.overlay {
- border-radius: 15px 50px;
+ /*border-radius: 2px 50px;*/
  max-width: 80%;
  margin: auto;
 }
@@ -108,14 +109,28 @@ div.overlay {
 /*----------------------------------------
   Projects
   ----------------------------------------*/
-/*.project-row {
-  flex-direction: column;
+.projects-section {
+
+}
+
+.project-row {
+  align-items: center;
+}
+
+div.overlay {
+ /*border-radius: 2px 50px;*/
+ max-width: 80%;
+ margin: auto;
 }
 
 .card {
   padding: 0;
   margin: 15px;
-}*/
+}
+
+.lang-icon {
+  width: 40px;
+}
 
 
 /*----------------------------------------
@@ -124,7 +139,8 @@ div.overlay {
 .contact-section .contact {
   -webkit-border-radius: 0 .25rem .25rem 0;
   border-radius: 0 .25rem .25rem 0;
-  background-color: #3F729B;
+  color: inherit !important;
+  background-color: #eeeeee;
 }
 .contact-section .form .btn-floating {
   float: right;
@@ -148,6 +164,10 @@ div.overlay {
 /*----------------------------------------
   Footer
   ----------------------------------------*/
+footer {
+  color: inherit;
+}
+
 .social-links .fab {
   font-size: 20px;
 }
@@ -179,10 +199,13 @@ div.overlay {
     justify-content: space-between;
   }
 
-/*  .card {
-    width: 30%;
-  }*/
+}
 
-
-
+@media(max-width: 767px) {
+  .crypto-row {
+    flex-direction: column-reverse;
+  }
+  .crypto-col {
+    margin-top: 48px;
+  }
 }
