@@ -21,7 +21,7 @@ h4 {
 }
 
 .section-header {
-  padding: 2rem 0 0;
+  padding: 1.5rem 0 0;
 }
 
 hr.my-4 {
@@ -98,7 +98,7 @@ i.fab {
   ----------------------------------------*/
 div.overlay {
  /*border-radius: 2px 50px;*/
- max-width: 80%;
+ max-width: 75%;
  margin: auto;
 }
 
@@ -201,21 +201,22 @@ footer {
 
 @media(min-width: 768px) {
   h1 {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
   }
 
   h4 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
-  p {
-    font-size: 1.2rem;
-  }
+  /*p {
+    font-size: 1rem;
+  }*/
+
   .project-row {
     flex-direction: row;
     justify-content: space-between;
