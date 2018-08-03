@@ -21,7 +21,7 @@ h4 {
 }
 
 .section-header {
-  padding: 2.5rem 0 0;
+  padding: 2rem 0 0;
 }
 
 hr.my-4 {
@@ -113,6 +113,10 @@ i.devicon {
 
 .devicon:hover {
   color: #1C2331;
+}
+
+.svg-inline--fa.fa-w-12 {
+  width: .75em;
 }
 
 /*----------------------------------------
