@@ -334,6 +334,8 @@
             <!-- Grid column -->
             <div class="col-lg-8">
               <div class="card-body form">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
                 <!-- Header -->
                 <h3 class="mt-4"><i class="fa fa-envelope pr-2"></i>Let's get in touch!</h3>
                 
@@ -379,7 +381,7 @@
                       <textarea type="text" id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
                       <label for="form-contact-message">Your message</label>
 
-                        <a class="btn-floating btn-lg stylish-color-dark">
+                        <a class="btn-floating btn-lg stylish-color-dark" onclick="document.getElementById('contact-form').submit();">
                           <i class="fas fa-paper-plane"></i>
                         </a>
                     </div>
@@ -417,9 +419,12 @@
               </div>
             </div>
           </div>
+        </form>
         </div>
       </section>
     </div>
+
+
     <hr class="my-4">
     <footer class="footer-copyright py-3 text-center">
       © 2018 Tom Eloe
@@ -446,6 +451,7 @@
     <script>
     new WOW().init();
     </script>
+
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
