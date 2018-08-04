@@ -55,23 +55,27 @@ hr.my-4 {
 /*----------------------------------------
   Hero Section
   ----------------------------------------*/
-.bg {
-  background-image: url(../img/header.jpg);
-  height: 100%; 
-  width: 100%;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  webkit-background-size: cover;
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: #fff;
+  justify-content: center;
+  height: 100vh;
 }
+
+/*header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+*/
+
 
 #learn-more {
   margin-top: 30px;
@@ -213,10 +217,6 @@ footer {
     font-size: 1.4rem;
   }
 
-  /*p {
-    font-size: 1rem;
-  }*/
-
   .project-row {
     flex-direction: row;
     justify-content: space-between;
@@ -231,4 +231,20 @@ footer {
   .crypto-col {
     margin-top: 48px;
   }
+}
+
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+ 
 }
