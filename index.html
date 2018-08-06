@@ -12,6 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- Github Calendar -->
@@ -92,7 +93,7 @@
       <h2 class="section-header text-center">Experience</h2>
       <hr class="my-4">
       
-      <a class="waves-light d-block text-center mt-4 mb-4" href="resume.pdf" target="_blank" mdbWavesEffect>
+      <a class="waves-light d-block text-center mt-4 mb-4 wow fadeIn" href="resume.pdf" target="_blank" mdbWavesEffect>
         <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">Download CV <i class="fas fa-file view-icon"></i></button>
       </a>
       <section class="resume-section p-3 d-flex flex-column">
@@ -191,9 +192,6 @@
         Loading the data just for you.
       </div> -->
       
-      
-      
-      
     </div>
     <!-- Projects -->
     <div id="projects" class="container">
@@ -221,9 +219,9 @@
               <div class="col-md-11 col-10">
                 <h5 class="font-weight-bold mb-3">To Do Checklist</h5>
                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing. Reprehenderit maiores nam, aperiam minima elit assumenda voluptate velit.</p>
-                <a class="waves-light" mdbWavesEffect>
+                <!-- <a class="waves-light" mdbWavesEffect>
                   <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Project <i class="fas fa-clone view-icon"></i></button>
-                </a>
+                </a> -->
                 <a class="waves-light" mdbWavesEffect>
                   <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Source <i class="fab fa-github view-icon"></i></button>
                 </a>
@@ -245,9 +243,9 @@
               <div class="col-md-11 col-10">
                 <h5 class="font-weight-bold mb-3">Crypto Currency Portfolio</h5>
                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing. Reprehenderit maiores nam, aperiam minima elit assumenda voluptate velit.</p>
-                <a class="waves-light" mdbWavesEffect>
+                <!-- <a class="waves-light" mdbWavesEffect>
                   <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Project <i class="fas fa-clone view-icon"></i></button>
-                </a>
+                </a> -->
                 <a class="waves-light" mdbWavesEffect>
                   <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Source <i class="fab fa-github view-icon"></i></button>
                 </a>
@@ -282,9 +280,9 @@
               <div class="col-md-11 col-10">
                 <h5 class="font-weight-bold mb-3">ChatBot</h5>
                 <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing. Reprehenderit maiores nam, aperiam minima elit assumenda voluptate velit.</p>
-                <a class="waves-light" mdbWavesEffect>
+                <!-- <a class="waves-light" mdbWavesEffect>
                   <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Project <i class="fas fa-clone view-icon"></i></button>
-                </a>
+                </a> -->
                 <a class="waves-light" mdbWavesEffect>
                   <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Source <i class="fab fa-github view-icon"></i></button>
                 </a>
@@ -294,6 +292,8 @@
         </div>
       </section>
     </div>
+    
+
     <!-- Contact -->
     <div id="contact" class="container">
       <h2 class="section-header text-center">Contact</h2>
@@ -308,7 +308,7 @@
             <!-- Grid column -->
             <div class="col-lg-8">
               <div class="card-body form">
-                <form id="contact-form" method="post" action="contact.php" role="form">
+                <form id="contact-form" method="post" action="mail.php" role="form">
                   <div class="messages"></div>
                   <div class="controls">
                     <div class="row">
@@ -340,44 +340,43 @@
                         </div>
                       </div>
                       <div class="col-md-12">
-                        <i class="fas fa-paper-plane"></i>  
+                        <i class="fas fa-paper-plane"></i>
                         <input type="submit" class="btn unique-color-dark btn-send" value="Send message">
                       </div>
                     </div>
-                
-                    </div>
-                  </form>
-                </div>
-              </section>
-            </div>
-
-            <!-- Footer -->
-            <hr class="my-4">
-            <footer class="footer-copyright py-3 text-center">
-              © 2018 Tom Eloe
-            </footer>
-            
-            
-            <!-- JQuery -->
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <!-- Bootstrap tooltips -->
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-            <!-- Bootstrap core JavaScript -->
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-            <!-- MDB core JavaScript -->
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
-            <!-- JQuery Easing -->
-            <script type="text/javascript" src="vendor/jquery-easing/jquery.easing.min.js"></script>
-            <!-- Github Calendar -->
-            <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-            <script>
-            GitHubCalendar(".calendar", "teloe");
-            </script>
-            <!-- Scroll animation effects -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-            <script>
-            new WOW().init();
-            </script>
-            <script type="text/javascript" src="js/main.js"></script>
-          </body>
-        </html>
+                    
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <!-- Footer -->
+          <hr class="my-4">
+          <footer class="footer-copyright py-3 text-center">
+            © 2018 Tom Eloe
+          </footer>
+          
+          
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <!-- JQuery Easing -->
+    <script type="text/javascript" src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Github Calendar -->
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script>
+    GitHubCalendar(".calendar", "teloe");
+    </script>
+    <!-- Scroll animation effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
