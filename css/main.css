@@ -59,8 +59,9 @@ hr.my-4 {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/5.png");
   background-position: center center;
+  /*background-attachment: fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -177,17 +178,13 @@ i.view-icon {
   outline: 0;
 }
 
-.li {
-  background-color: #0082ca !important;
-  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+a.social-links {
+  color: #1C2331 !important;
 }
 
-.gh {
-  background-color: #333 !important;
-}
-
-.social {
-  font-size: 1.2rem;
+.social-icon {
+  font-size: 2rem;
+  color: #1C2331 !important;
 }
 
 
