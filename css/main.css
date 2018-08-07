@@ -87,10 +87,6 @@ header.masthead {
   flex-direction: row;
   padding-top: 15px;
 }
-i.fab {
-  font-size: 30px;
-  /*padding: 10px;*/
-}
 
 .hero-social-btn {
   margin-right: 1rem;
@@ -175,6 +171,23 @@ i.view-icon {
   width: inherit;
   text-align: center;
   color: #fff;
+}
+
+.list-inline-item {
+  outline: 0;
+}
+
+.li {
+  background-color: #0082ca !important;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+
+.gh {
+  background-color: #333 !important;
+}
+
+.social {
+  font-size: 1.2rem;
 }
 
 

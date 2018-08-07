@@ -299,62 +299,129 @@
       <h2 class="section-header text-center">Contact</h2>
       <hr class="my-4">
       <p class="text-center grey-text">I'm currently looking for new opportunities. Please contact me if you like my work!</p>
-      
-      <section class="contact-section my-5">
-        <!-- Form with header -->
+
+
+      <section class="contact-section my-4">
         <div class="card">
           <!-- Grid row -->
           <div class="row">
             <!-- Grid column -->
             <div class="col-lg-8">
-              <div class="card-body form">
-                <form id="contact-form" method="post" action="mail.php" role="form">
-                  <div class="messages"></div>
-                  <div class="controls">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="form_name">Name</label>
-                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Name is required.">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="form_email">Email</label>
-                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
+
+
+
+
+
+              <form id="contactform" class="card-body form" method="POST">
+                <!-- Header -->
+                <h3 class="mt-4"><i class="fa fa-envelope pr-2"></i>Let's get in touch!</h3>
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" name="name" id="form-contact-name" class="form-control">
+                      <label for="form-contact-name" class="">Your name</label>
                     </div>
-                    <div class="row">
-                      
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="form_message">Message</label>
-                          <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <i class="fas fa-paper-plane"></i>
-                        <input type="submit" class="btn unique-color-dark btn-send" value="Send message">
-                      </div>
-                    </div>
-                    
                   </div>
-                </form>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="email" name="_replyto" id="form-contact-email" class="form-control">
+                      <label for="form-contact-email" class="">Your email</label>
+                      <input type="hidden" name="_subject" value="Website contact" />
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <textarea type="text" name="message" id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                      <label for="form-contact-message">Your message</label>
+                      <input type="text" name="_gotcha" style="display:none" />
+                      <input type="hidden" name="_next" value="thanks.html" />
+                      <button type="submit" class="btn-floating btn-lg unique-color-dark waves-effect waves-light">
+                        <i class="fas fa-paper-plane"></i>
+                      </button>
+                        
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </form>
+
+
+
+
+
+
+
+            </div>
+            <!-- Grid column -->
+            <div class="col-lg-4">
+              <div class="card-body contact text-center h-100 white-text">
+                <h3 class="my-4 pb-2">Contact information</h3>
+                <ul class="text-lg-left list-unstyled ml-4">
+                  <li>
+                    <p><i class="fa fa-map-marker pr-2"></i>Porter Ranch, CA</p>
+                  </li>
+                  <li>
+                    <p><i class="fa fa-envelope pr-2"></i>tomeloe@gmail.com</p>
+                  </li>
+                </ul>
+                <hr class="my-4">
+                <ul class="list-inline text-center list-unstyled">
+                  <li class="list-inline-item">
+                    <button type="button" class="btn btn-md waves-effect waves-light li">
+                      <i class="fab fa-linkedin-in social"></i>
+                    </button>
+                  </li>
+                  <li class="list-inline-item">
+
+                    <button class="btn btn-md waves-effect waves-light gh">
+                      <i class="fab fa-github social"></i>
+                    </button>
+                  </li>
+                </ul>
               </div>
-            </section>
+            </div>
+            <!-- Grid column -->
           </div>
-          <!-- Footer -->
-          <hr class="my-4">
-          <footer class="footer-copyright py-3 text-center">
-            © 2018 Tom Eloe
-          </footer>
+          <!-- Grid row -->
+        </div>
+        <!-- Form with header -->
+      </section>
+      <!-- Section: Contact v.3 -->
+
+
+
+
+
+
+
+
+
+
+      
+   
+    
+
+      
+    </div>
+    <!-- Footer -->
+    <hr class="my-4">
+    <footer class="footer-copyright py-3 text-center">
+      © 2018 Tom Eloe
+    </footer>
+   
           
           
     <!-- JQuery -->
@@ -377,7 +444,11 @@
     <script>
     new WOW().init();
     </script>
+    <!-- Formspree -->
+    <script>
+      var contactform =  document.getElementById('contactform');
+      contactform.setAttribute('action', '//formspree.io/' + 'tomeloe' + '@' + 'gmail' + '.' + 'com');
+    </script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/mail.js"></script>
   </body>
 </html>
