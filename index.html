@@ -4,369 +4,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Eloe</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/logo.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburger.css">
   </head>
   <body>
     
-    <!-- Navbar -->
-    <mdb-navbar class="navbar navbar-dark navbar-expand-lg fixed-top scrolling-navbar intro-fixed-nav">
-    <mdb-navbar-brand>
-    <a class="logo navbar-brand hoverable" href="#">
-      <img class="js-scroll-trigger" src="img/logo1.png" style="width: 34px;">
-    </a>
-    </mdb-navbar-brand>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <!-- Hamburger Menu -->
+    <div class="hamburger"> 
+      <button id="nav-icon" class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <div class="menu-bars navbar-toggler-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p id="menu" class="text-white">MENU</p>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-lg-0">
-        <li class="nav-item">
-          <a id="nav-about" class="nav-link waves-effect waves-light js-scroll-trigger" href="javascript:;;">About
-          </a>
+    <div class="collapse" id="collapseExample">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a id="nav-about" class="nav-link" href="#about">ABOUT</i></a>
         </li>
         <li class="nav-item">
-          <a id="nav-experience" class="nav-link waves-effect waves-light js-scroll-trigger" href="javascript:;;">Experience</a>
+          <a id="nav-portfolio" class="nav-link" href="#portfolio">PORTFOLIO</a>
         </li>
         <li class="nav-item">
-          <a id="nav-projects" class="nav-link waves-effect waves-light js-scroll-trigger" href="javascritp:;;">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a id="nav-contact" class="nav-link waves-effect waves-light js-scroll-trigger" href="javascritp:;;">Contact</a>
+          <a id="nav-contact" class="nav-link" href="#contact">CONTACT</a>
         </li>
       </ul>
     </div>
-    </mdb-navbar>
-    
-    <!-- Hero -->
-    <header class="masthead text-center text-white d-flex">
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid d-flex slanted">
       <div class="container">
-        <h1 class="text-center">Hi, I'm Tom.</h1>
-        <h4 class="text-center">I <mark>make</mark> software to <u>make</u> a difference.</h4> 
+        <h1>Hi, I'm Tom.</h1>
+        <p class="lead">I <span id="code">code</span> to make a difference.</p>
       </div>
-      <a id="learn-more" class="btn btn-outline-white wow fadeInDown waves-effect waves-light" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeInDown; animation-delay: 0.4s;">about me</a>
-    </header>
-    
-    <!-- About -->
-    <div id="about" class="container">
-      <h2 class="section-header text-center">About</h2>
+    </div>
+
+    <div class="container">
+      <!-- About -->
+    <div id="about">
+      <h2 class="text-center">About</h2>
       <hr class="my-4">
       
       <div class="row">
-        <div class="col-lg-4 photo">
-          <div class="view overlay z-depth-1 photo-col">
-            <img src="img/profilepic.jpg" class="img-fluid" alt="Me and my wife, Natalie.">
-            <div class="mask flex-center rgba-stylish-light">
-              <p class="white-text">Me and my wife, Natalie ❤️</p>
-            </div>
-          </div>
+        <div class="col-md-4 photo">
+          <img src="img/profilepic.jpg" class="img-fluid profile-pic d-block mx-auto" alt="Me and my wife, Natalie.">
+          <figcaption class="pt-3 text-muted">Me and my wife, Natalie ❤️</figcaption>
         </div>
-        <div class="col-lg-8">
-          <p class="grey-text al">I constantly question how to make things better. This is why I’m fascinated with programming. It gives me the opportunity to continuously improve and create things that matter. Consequently, I decided to change careers from insurance and become a software developer. Having attended a coding boot camp and currently working as a developer at a startup, I have acquired a foundation of knowledge from which to build upon.</p>
-          <p class="grey-text">As a web developer, I love that I get to use my creativity, attention to detail, and problem-solving abilities. I consider myself a lifelong learner and enjoy using my technical skills to produce software that has the potential to improve the lives of others.</p>
-          <p class="grey-text">I am seeking new opportunities where I can make a big impact and demonstrate my value.</p>
-      
+        <div class="col-md-8">
+          <p class="text-muted top-text">I constantly question how to make things better. This is why I’m fascinated with programming. It gives me the opportunity to continuously improve and create things that matter. Consequently, I decided to change careers from insurance and become a software developer. Having attended a coding boot camp and currently working as a developer at a startup, I have acquired a foundation of knowledge from which to build upon.</p>
+          <p class="text-muted">As a web developer, I love that I get to use my creativity, attention to detail, and problem-solving abilities. I consider myself a lifelong learner and enjoy using my technical skills to produce software that has the potential to improve the lives of others.</p>
+          <p class="text-muted">I am seeking new opportunities where I can make a big impact and demonstrate my value.</p>
+        </div>
+      </div>
+
+      <a id="cv-btn" class="text-center btn d-block mx-auto mt-4" href="resume.pdf" target="_blank">
+        Download CV <i class="fas fa-file view-icon"></i>
+      </a>
+
+      <!-- Timeline -->
+      <div class="my-5" data-aos="fade-in" data-aos-duration="1500">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="mb-3">Experience</h4>
+            <ul class="timeline">
+              <i class="fas fa-briefcase"></i>
+              <li class="timeline-list-item">
+                <a target="_blank" href="https://mycherrytree.com/">CherryTree, Inc.</a>
+                <span class="text-secondary float-right">Apr 2018 - Present</span><br>
+                <span class="text-secondary">Software Developer</span>
+                <p class="text-muted pt-2">Developed company website from scratch using Ruby on Rails and various gems.</p>
+              </li>
+              <i class="fas fa-briefcase"></i>
+              <li class="timeline-list-item">
+                <a href="https://www.codingdojo.com/" target="_blank">Coding Dojo</a>
+                <span class="text-secondary float-right">Aug 2017 - Apr 2018</span><br>
+                <span class="text-secondary">Student/ Resident</span>
+                <p class="text-muted pt-2">Completed 14 week immersive training program, gaining over 1000 hours of intensive coding experience.</p>
+              </li>
+              <i class="fas fa-briefcase"></i>
+              <li class="timeline-list-item">
+                <a href="https://agents.allstate.com/robert-feldman-glendale-ca.html" target="_blank">Allstate, La Crescenta Insurance Services, Inc.</a>
+                <span class="text-secondary float-right">May 2015 - Aug 2017</span><br>
+                <span class="text-secondary">Agency Manager</span>
+                <p class="text-muted pt-2">Managed 10 - 15 staff between three branch locations at one of the largest Allstate Insurance agencies in California.</p>
+              </li>
+            </ul>
+            <h4 class="my-3">Education</h4>
+            <ul class="timeline">
+              <i class="fas fa-graduation-cap"></i>
+              <li class="timeline-list-item">
+                <a target="_blank" href="https://www.sdsu.edu/">San Diego State University</a>
+                <span class="text-secondary float-right">Dec 2009</span>
+                <p class="text-muted">Bachelor of Science Psychology</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       
-    </div>
-    
-    <!-- Experience -->
-    <div id="experience" class="container">
-      <h2 class="section-header text-center">Experience</h2>
-      <hr class="my-4">
-      
-      <a class="waves-light d-block text-center mt-4 mb-4" href="resume.pdf" target="_blank" mdbWavesEffect>
-        <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">Download CV <i class="fas fa-file view-icon"></i></button>
-      </a>
-      <section class="resume-section p-3 d-flex flex-column">
-        <h4 class="mb-5">Programming Languages &amp; Tools</h4>
-        <div class="d-flex">
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-html5-plain-wordmark"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-css3-plain-wordmark"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-javascript-plain"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-jquery-plain-wordmark"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-sass-original"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-ruby-plain-wordmark"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-rails-plain"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-bootstrap-plain"></i>
-            </li>
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-wordpress-plain"></i>
-            </li>
-            
-            <li class="list-inline-item px-3 py-2">
-              <i class="devicon devicon-python-plain-wordmark"></i>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
-      <section class="resume-section p-3 d-flex flex-column">
-        <h4 class="mb-5">Work Experience</h4>
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h5 class="mb-0">Software Developer</h5>
-            <div class="subheading mb-3">CherryTree, Inc.</div>
-            <p class="grey-text">Developed company website from scratch using Ruby on Rails and various gems.</p>
-            <p class="grey-text">Continuously integrated features/fixes in self-managed work environment.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">April 2018 - Present</span>
-          </div>
-        </div>
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h5 class="mb-0">Student/ Resident</h5>
-            <div class="subheading mb-3">Coding Dojo</div>
-            <p class="grey-text">Completed 14 week immersive training program, gaining over 1000 hours of intensive coding experience.</p>
-            <p class="grey-text">Participated in additional study in computer theory and algorithms.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2017 - April 2018</span>
-          </div>
-        </div>
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h5 class="mb-0">Agency Manager</h5>
-            <div class="subheading mb-3">LCSB Insurance Services, Inc.</div>
-            <p class="grey-text">Managed 10 - 15 staff between three branch locations at one of the largest Allstate Insurance agencies in California.</p>
-            <p class="grey-text">Maintained records, calculated bonuses, conducted interviews and developed commission structures for agency with $20M client book of business.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2015 - August 2017</span>
-          </div>
-        </div>
-      </section>
-      <section class="resume-section p-3 d-flex flex-column">
-        <div class="my-auto">
-          <h4 class="mb-5">Education</h4>
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h5 class="mb-0">San Diego State University</h5>
-              <p class="grey-text">Bachelor of Science Psychology</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2009</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
     <!-- Projects -->
-    <div id="projects" class="container">
-      <h2 class="section-header text-center">Projects</h2>
-      <hr class="my-4">
-      
-      <section>
-        <p class="grey-text text-center w-responsive mx-auto mb-5">I love learning new things and taking on new challenges. Working on projects is one of my favorite ways to learn and improve my skill set. Check out some of my recent work. </p>
-        
-        <!-- Grid row -->
+    <section class="content-section mb-5" id="portfolio" data-aos="fade-in" data-aos-duration="1500">
+        <div class="content-section-heading text-center">
+          <h2 class="text-center">Portfolio</h2>
+          <hr class="my-4">
+          <p class="text-muted text-center mb-5">I love learning new things and taking on new challenges. Working on projects is one of my favorite ways to learn and improve my skill set. Check out some of my recent work. </p>
+        </div>
+
         <div class="row">
-          <!-- Grid column -->
-          <div class="col-lg-5 mb-lg-0 mb-5">
-            <!--Image-->
-            <img src="img/projects/todo.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1">
-          </div>
-          <!-- Grid column -->
-          <div class="col-lg-7">
-            <!-- Grid row -->
-            <div class="row mb-3">
-              <div class="col-md-1 col-2">
-                <i class="devicon devicon-python-plain-wordmark"></i>
+          <div class="col-md-6 content">
+            <a class="portfolio-item" href="https://github.com/teloe/to_do_list" target="_blank">
+              <span class="caption">
+              </span>
+              <div class="content-overlay"></div>
+              <img class="img-fluid project-image" src="img/project1.png" alt="">
+              <div class="content-details fadeIn-bottom">
+                <p class="content-text">Django To-Do List app that implements CRUD operations with users allowing them to create, read, update and delete lists and save them to a database. Uses Bootstrap framework for styling.</p>
+                  <button type="button" class="btn btn-outline-light">View Source <i class="fab fa-github fa-project"></i></button>
               </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <div class="row mb-3">
               <div class="col-md-11 col-10">
                 <h5 class="font-weight-bold mb-3">To Do Checklist</h5>
-                <p class="grey-text">Django To-Do List app that implements CRUD operations with users allowing them to create, read, update and delete lists and save them to a database. Uses Bootstrap framework for styling.</p>
-                <!-- <a class="waves-light" mdbWavesEffect>
-                  <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Project <i class="fas fa-clone view-icon"></i></button>
-                </a> -->
-                <a href="https://github.com/teloe/to_do_list" target="_blank" class="waves-light" mdbWavesEffect>
-                  <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Source <i class="fab fa-github view-icon"></i></button>
+                <p class="text-uppercase">Technologies</p>
+                <ul class="list-inline list-icons m-0">
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in">
+                    <i class="devicon devicon-django-plain"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="devicon devicon-python-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="devicon devicon-bootstrap-plain"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="devicon devicon-html5-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="devicon devicon-css3-plain-wordmark"></i>
+                  </li>
+                </ul>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- Grid row -->
+
         <hr class="my-5">
-        <!-- Grid row -->
-        <div class="row project-row crypto-row">
-          <!-- Grid column -->
-          <div class="col-lg-7 crypto-col">
-            <!-- Grid row -->
-            <div class="row mb-3">
-              <div class="col-md-1 col-2">
-                <i class="devicon devicon-rails-plain"></i>
-              </div>
-              <div class="col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">Crypto Currency Portfolio</h5>
-                <p class="grey-text">Ruby on Rails application that allows users to view real-time pricing of cryptocurrencies and track their total gain/ loss on investment. Implements Bootstrap 3 framework and the Coin Market Cap API.</p>
-                <!-- <a class="waves-light" mdbWavesEffect>
-                  <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Project <i class="fas fa-clone view-icon"></i></button>
-                </a> -->
-                <a href="https://github.com/teloe/rails_crypto" target="_blank" class="waves-light" mdbWavesEffect>
-                  <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Source <i class="fab fa-github view-icon"></i></button>
-                </a>
-              </div>
+
+        <div class="row crypto-row">
+          <div class="col-md-6">
+            <div class="col-md-11 col-10">
+              <h5 class="font-weight-bold mb-3">Crypto Currency Portfolio</h5>
+              <p class="text-uppercase">Technologies</p>
+              <ul class="list-inline list-icons m-0">
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in">
+                  <i class="devicon devicon-ruby-plain-wordmark"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="100">
+                  <i class="devicon devicon-rails-plain"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="200">
+                  <i class="devicon devicon-bootstrap-plain"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="300">
+                  <i class="devicon devicon-html5-plain-wordmark"></i>
+                </li>
+                <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="devicon devicon-css3-plain-wordmark"></i>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-5">
-            <!--Image-->
-            <img src="img/projects/crypto.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1">
+          <div class="col-md-6 content">
+            <a class="portfolio-item" href="https://github.com/teloe/rails_crypto" target="_blank">
+              <span class="caption">
+              </span>
+              <div class="content-overlay"></div>
+              <img class="img-fluid project-image" src="img/project2.jpeg" alt="">
+              <div class="content-details fadeIn-bottom">
+                <p class="content-text">Ruby on Rails application that allows users to view real-time pricing of cryptocurrencies and track their total gain/ loss on investment. Implements Bootstrap 3 framework and the Coin Market Cap API.</p>
+                  <button type="button" class="btn btn-outline-light">View Source <i class="fab fa-github fa-project"></i></button>
+              </div>
+            </a>
           </div>
         </div>
         
         <hr class="my-5">
-        <!-- Grid row -->
+
         <div class="row">
-          <!-- Grid column -->
-          <div class="col-lg-5 mb-lg-0 mb-5">
-            <!--Image-->
-            <img src="img/projects/bot.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1">
+          <div class="col-md-6 content">
+            <a class="portfolio-item" href="https://github.com/teloe/guacguy.com" target="_blank">
+              <span class="caption">
+              </span>
+              <div class="content-overlay"></div>
+              <img class="img-fluid project-image" src="img/project3.jpeg" alt="">
+              <div class="content-details fadeIn-bottom">
+                <p class="content-text">Ruby on Rails e-commerce application where I plan to sell my awesome guacamole. Implements Spree e-commerce platform, Stripe API, and various other gems.</p>
+                  <button type="button" class="btn btn-outline-light">View Source <i class="fab fa-github fa-project"></i></button>
+              </div>
+            </a>
           </div>
-          <!-- Grid column -->
-          <div class="col-lg-7">
-            <!-- Grid row -->
-            <div class="row mb-3">
-              <div class="col-md-1 col-2">
-                <i class="devicon devicon-javascript-plain"></i>
-              </div>
+          <div class="col-md-6">
               <div class="col-md-11 col-10">
-                <h5 class="font-weight-bold mb-3">ChatBot</h5>
-                <p class="grey-text">ChatBot for Facebook Messenger using JavaScript and Node.js.</p>
-                <!-- <a class="waves-light" mdbWavesEffect>
-                  <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Project <i class="fas fa-clone view-icon"></i></button>
-                </a> -->
-                <a href="https://github.com/teloe/chatbot" target="_blank" class="waves-light" mdbWavesEffect>
-                  <button id="elegant" type="button" class="btn btn-elegant waves-effect waves-light">View Source <i class="fab fa-github view-icon"></i></button>
-                </a>
+                <h5 class="font-weight-bold mb-3">GuacGuy.com</h5>
+                <p class="text-uppercase">Technologies</p>
+                <ul class="list-inline list-icons m-0">
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in">
+                    <i class="devicon devicon-ruby-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="devicon devicon-rails-plain"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="devicon devicon-html5-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="devicon devicon-css3-plain-wordmark"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="devicon devicon-sass-original"></i>
+                  </li>
+                  <li class="list-inline-item pr-2 py-2" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="devicon devicon-javascript-plain"></i>
+                  </li>
+                </ul>
               </div>
-            </div>
           </div>
         </div>
-      </section>
-    </div>
-    
+    </section>
+
     <!-- Contact -->
-    <div id="contact" class="container">
-      <h2 class="section-header text-center">Contact</h2>
+    <div id="contact" data-aos="fade-in" data-aos-duration="1500">
+      <h2 class="text-center">Contact</h2>
       <hr class="my-4">
-      <p class="text-center grey-text">I'm currently looking for new opportunities. Please contact me if you like my work!</p>
+      <p class="text-center text-muted">I'm currently looking for new opportunities. Please contact me if you like my
+      work.</p>
 
-      <section class="contact-section my-4">
-        <div class="card">
-          <!-- Grid row -->
+        <div class="card mx-auto">
           <div class="row">
-            <!-- Grid column -->
-            <div class="col-lg-8">
-
-              <!-- Form start -->
-              <form id="contactform" class="card-body form" method="POST">
-                <!-- Header -->
-                <h3 class="mt-4"><i class="fa fa-envelope pr-2"></i>Let's get in touch!</h3>
-                <!-- Grid row -->
+            <div class="col-md-12">
+             
+              <form id="contactform" class="card-body form" action="https://formspree.io/xzgnpkvm" method="POST">
+                <h3 class="mt-4"><i class="fa fa-envelope pr-2"></i>Get in touch!</h3>
                 <div class="row">
-                  <!-- Grid column -->
                   <div class="col-md-6">
                     <div class="md-form mb-0">
-                      <input type="text" name="name" id="form-contact-name" class="form-control">
-                      <label for="form-contact-name" class="">Your name</label>
+                      <label class="pt-3" for="form-contact-name" class="">Your name</label>
+                      <input type="text" name="name" id="form-contact-name" class="form-control" required>
                     </div>
                   </div>
-                  <!-- Grid column -->
+
                   <div class="col-md-6">
                     <div class="md-form mb-0">
-                      <input type="email" name="_replyto" id="form-contact-email" class="form-control">
-                      <label for="form-contact-email" class="">Your email</label>
+                      <label class="pt-3" for="form-contact-email" class="">Your email</label>
+                      <input type="email" name="_replyto" id="form-contact-email" class="form-control" required>
                       <input type="hidden" name="_subject" value="Website contact" />
                     </div>
                   </div>
                 </div>
                 
-                <!-- Grid row -->
                 <div class="row">
-                  <!-- Grid column -->
                   <div class="col-md-12">
                     <div class="md-form mb-0">
-                      <textarea type="text" name="message" id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
-                      <label for="form-contact-message">Your message</label>
+                      <label class="pt-3" for="form-contact-message">Your message</label>
+                      <textarea type="text" name="message" id="form-contact-message" class="form-control md-textarea" rows="4"></textarea>
                       <input type="text" name="_gotcha" style="display:none" />
-                      <input type="hidden" name="_next" value="thanks.html" />
-                      <button type="submit" class="btn-floating btn-lg unique-color-dark waves-effect waves-light">
+                      <button class="submit btn btn-outline-primary float-right mt-3" type="submit" value="Send">Send
                         <i class="fas fa-paper-plane"></i>
                       </button>
                       </a>
                     </div>
                   </div>
                 </div>
+                <div class="social-icons mx-auto mt-3">
+                  <a class="social-link px-1" href="#"><i class="fab fa-linkedin-in form-link"></i></a>
+                  <a class="social-link px-1" href="#"><i class="fab fa-github form-link"></i></a>
+                </div>
               </form>
-
-            </div>
-            <!-- Grid column -->
-            <div class="col-lg-4">
-              <div class="card-body contact text-center h-100 white-text">
-                <h3 class="my-4 pb-2">Contact information</h3>
-                <ul class="text-lg-left list-unstyled ml-4">
-                  <li>
-                    <p><i class="fa fa-map-marker pr-2"></i>Porter Ranch, CA</p>
-                  </li>
-                  <li>
-                    <p><i class="fa fa-envelope pr-2"></i>tomeloe@gmail.com</p>
-                  </li>
-                </ul>
-                <hr class="my-4">
-                <ul class="list-inline text-center list-unstyled">
-                  <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/tomeloe/" target="_blank" class="waves-effect waves-light social-link">
-                      <i class="fab fa-linkedin-in social-icon"></i>
-                      <p class="social-username">tomeloe</p>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-
-                    <a href="https://github.com/teloe" target="_blank" class="elegant waves-effect waves-light social-link">
-                      <i class="fab fa-github social-icon elegant"></i>
-                      <p class="social-username">teloe</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-
+        </div> 
     </div>
+      
+  </div>
+    
 
     <!-- Footer -->
     <hr class="my-4">
@@ -374,28 +313,25 @@
       © 2018 Tom Eloe
     </footer>
    
-          
-          
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <!-- JQuery -->    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- JQuery Easing -->
     <script type="text/javascript" src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Scroll animation effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    new WOW().init();
+      AOS.init();
     </script>
     <!-- Formspree -->
     <script>
       var contactform =  document.getElementById('contactform');
       contactform.setAttribute('action', '//formspree.io/' + 'tomeloe' + '@' + 'gmail' + '.' + 'com');
     </script>
+    <script type="text/javascript" src="js/formspree.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/hamburger.js"></script>
   </body>
 </html>
