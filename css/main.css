@@ -159,7 +159,6 @@ div.hamburger {
 
 .nav-link {
   color: #fff;
-  font-size: 0.8rem;
 }
 
 #menu {
@@ -360,6 +359,10 @@ span#code::after {
 
 @media(max-width: 767px) {
   p {
+    font-size: 0.8rem;
+  }
+
+  .nav-link {
     font-size: 0.8rem;
   }
   
