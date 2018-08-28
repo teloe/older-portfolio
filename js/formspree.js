@@ -2,7 +2,7 @@ var $contactForm = $('#contactform');
 $contactForm.submit(function(e) {
   e.preventDefault();
   $.ajax({
-    url: 'https://formspree.io/xzgnpkvm',
+    url: 'https://formspree.io/xajrbpzm',
     method: 'POST',
     data: $(this).serialize(),
     dataType: 'json',
@@ -15,7 +15,7 @@ $contactForm.submit(function(e) {
     },
     error: function(err) {
       $contactForm.find('.alert--loading').hide();
-      $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+      $contactForm.append('<div class="alert alert--error">Oops, there was an error.</div>');
     }
   });
 });
