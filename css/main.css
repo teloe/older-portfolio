@@ -159,6 +159,7 @@ div.hamburger {
 
 .nav-link {
   color: #fff;
+  font-size: 0.8rem;
 }
 
 #menu {
@@ -361,6 +362,7 @@ span#code::after {
   p {
     font-size: 0.8rem;
   }
+  
   .crypto-row {
     flex-direction: column-reverse;
   }
