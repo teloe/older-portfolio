@@ -40,7 +40,7 @@ hr.my-4 {
 }
 
 figcaption, .text-secondary {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
 /*----------------------------------------
@@ -73,10 +73,10 @@ i {
 
 i.fab {
   text-decoration: none; 
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-i.fa-project {
+a.project-link {
   font-size: 0.8rem;
 }
 
@@ -87,7 +87,7 @@ i.fa-project {
 }
 
 .form-link:hover {
-  color: #494e5a;
+  color: #646a7b;
 }
 
 .social-icons {
@@ -100,7 +100,6 @@ i.fa-project {
 .social-link:hover {
   color: #f5f5f5;
 }
-
 
 /* Devions */
 i.devicon {
@@ -268,61 +267,6 @@ span#code::after {
   margin: 0 auto;
 }
 
-.content .content-overlay {
-  background: rgba(0,0,0,0.9);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.content-text {
-  font-size: 0.6rem;
-}
-
-.btn-outline-light {
-    font-size: 0.6rem;
-  }
-
-.content:hover .content-details{
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-
-.content-details {
-  color: #fff;
-  margin-bottom: 0.5em;
-}
-
-.fadeIn-bottom{
-  top: 80%;
-}
-
 
 /*----------------------------------------
   Media Queries
@@ -349,9 +293,7 @@ span#code::after {
   h4 {
     font-size: 1.4rem;
   }
-  .content-text {
-    font-size: 0.7rem;
-  }
+
   .card {
     max-width: 80%;
   }  
